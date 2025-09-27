@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Câu 1</title>
+    <style>
+        #gioithieu {
+            background-color: #F3FDE8;
+        }
+
+        #lienhe {
+            background-image: url("images/background.png");
+            background-repeat: repeat;
+            text-align: center;
+            padding: 10px
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-size: 24px;
+            -webkit-text-stroke: 0.7px black;
+        }
+
+        .table1,
+        .table1 th,
+        .table1 td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#gioithieu">Giới thiệu bản thân</a>
+        <a href="#lienhe">Gửi thông tin và liên hệ cùng tôi</a>
+    </nav>
+
+    <div id="gioithieu">
+        <h1 style="color: #CAEDFF;">Giới thiệu bản thân</h1>
+        <div style="text-align: center;">
+            <img src="images/image.png" alt="profile" height="150px" width="150px">
+        </div>
+
+        <h2 style="color: #D8B4F8">Thông tin cơ bản</h2>
+        <ul>
+            <li>Tên: Lê Anh Thư</li>
+            <li>Năm sinh: 2005</li>
+            <li>Chuyên ngành: Hệ thống thông tin</li>
+        </ul>
+        <h2 style="color: #D8B4F8">Sở thích</h2>
+        <h3 style="color: #FFC7EA">Món ăn</h3>
+        <ol>
+            <li>Quả na</li>
+            <li>Mì bò rau thơm</li>
+            <li>Bánh đuông dừa</li>
+        </ol>
+        <h3 style="color: #FFC7EA">Giải trí</h3>
+        <h4>Trò chơi</h4>
+        <ul>
+            <li>Bắn bi</li>
+            <li>Nhảy dây</li>
+            <li>Đá cầu</li>
+        </ul>
+        <h4>Bài hát yêu thích</h4>
+        <ul>
+            <li>Đôi mắt_Wanbi Tuấn Anh</li>
+            <li>Bối rối_Đông Nhi</li>
+            <li>Anh lại trễ hẹn nữa rồi_Lương Bích Hữu</li>
+        </ul>
+        <h2 style="color: #D8B4F8">Mục tiêu của bản thân</h2>
+        <table class="table1">
+            <tr>
+                <th width="100">Mục tiêu</th>
+                <th width="100">Thời hạn</th>
+                <th width="100">Hoàn thành</th>
+            </tr>
+            <tr>
+                <td width="310">Trung bình điểm môn web đạt 8.0</td>
+                <td>DD/MM/YYYY</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td width="310">Đạt chứng chỉ ngoại ngữ đủ tốt nghiệp</td>
+                <td>DD/MM/YYYY</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td width="310">Chọn được công ty với vị trí backend developer</td>
+                <td>DD/MM/YYYY</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <div id="lienhe">
+        <h1 style="color: #CAEDFF;">Gửi thông tin và giao lưu cùng tôi</h1>
+        <form>
+
+            <label for="hoten">Họ và tên:</label>
+            <input type="text" id="username">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+
+            <br><br>
+            <label for="tinnhan">Tin nhắn:</label>
+            <br>
+            <textarea id="tinnhan" rows="3" cols="45"></textarea>
+
+            <br><br>
+            <label for="gioitinh">Giới tính</label>
+            <br>
+            <input type="radio" id="nam" value="nam" name="gioitinh">
+            <label for="nam">Nam</label>
+            <input type="radio" id="nu" value="nu" name="gioitinh">
+            <label for="nu">Nữ</label>
+
+            <br><br>
+            <label for="sothich">Sở thích:</label>
+            <br>
+            <input type="checkbox" name="sothich" value="nghenhac">
+            <label for="sothich">Nghe nhạc</label>
+            <input type="checkbox" name="sothich" value="boiloi">
+            <label for="sothich">Bơi lội</label>
+            <input type="checkbox" name="sothich" value="bien">
+            <label for="sothich">Biển</label>
+
+            <br><br>
+            <label for="nganh">Ngành:</label>
+            <select id="nganh">
+                <option value="khmt">Khoa học Máy tính</option>
+                <option value="httt">Hệ thống thông tin</option>
+                <option value="ktpm">Kĩ thuật phần mềm</option>
+            </select>
+
+            <br><br>
+            <input type="submit" value="Gửi">
+
+        </form>
+    </div>
+
+    <footer>
+        <p>@2024 23521536 Lê Anh Thư</p>
+    </footer>
+
+</body>
+
+</html>
